@@ -35,16 +35,14 @@ optional arguments:
 Normally, the tool get's the DB user/password/db out of the environment variable. If you have multiple databases in Container, you can specify this by configuring the CORNER_CASE_CONTAINER variable.
 
 ```json
-CORNER_CASE_CONTAINER = [
-    {                                                                                                                  
-        "container_name": "icinga_mariadb_1",
-        "type": "mariadb",                                 
-        "container_dir": "/opt/icinga",                                                                                
-        "database": "icinga",                                                                                          
-        "user": "root",
-        "password": "changeme",                          
-    },                                                                                                                 
-] 
+{                                                                                                                  
+    "container_name": "icinga_mariadb_1",
+    "type": "mariadb",                                 
+    "container_dir": "/opt/icinga",                                                                                
+    "database": "icinga",                                                                                          
+    "user": "root",
+    "password": "changeme",                          
+},                                                                                                                 
 ```
 
 
